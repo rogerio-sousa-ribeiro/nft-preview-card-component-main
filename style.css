@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilização da caixa principal */
+.principal{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal_container{
+    width: 20%;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 12px;
+}
+
+
+/* Estilização do container que fica 
+dentro da caixa principal, por causa das
+margens */
+.principal_container_caixa{
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+}
+
+.principal_container_imagem{
+    border-radius: 12px;
+}
+
+.principal_container_imagem_imagem{
+    border-radius: 12px;
+}
+
+.principal_container_caixa_titulo{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}   
+
+.principal_container_caixa_paragrafo{
+    color: hsl(215, 32%, 27%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.principal_container_caixa_valores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 0.1px solid gray;
+}
+
+.valores_container{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+}
+
+.valores_valor_atual{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(178, 100%, 50%);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.valores_container_data{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.valores_ultima_data{
+    color: hsl(215, 32%, 27%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+/* Caixa com autor e avatar */
+
+.principal_container_caixa_autor{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0 5px 0;
+}
+
+.autor_imagem{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.autor_nome_autor{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color:hsl(215, 32%, 27%);
+}
+
+.autor_nome_destaque{
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* Estilização com mouse */
+
+.principal_container_caixa_titulo:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.autor_nome_destaque:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.principal_container_imagem:hover{
+    background-image: url("image-equilibrium.jpg");
+    background-color: aqua;
+    background-size: cover;    
+}
