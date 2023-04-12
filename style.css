@@ -37,11 +37,17 @@ margens */
 }
 
 .principal_container_imagem{
+    position: relative;
+    opacity: 1;
     border-radius: 12px;
 }
 
 .principal_container_imagem_imagem{
+    opacity: 1;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
+    backface-visibility: hidden;
 }
 
 .principal_container_caixa_titulo{
@@ -122,6 +128,17 @@ margens */
 
 /* Estilização com mouse */
 
+.principal_container_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
 .principal_container_caixa_titulo:hover{
     color:hsl(178, 100%, 50%);
 }
@@ -130,8 +147,14 @@ margens */
     color:hsl(178, 100%, 50%);
 }
 
-.principal_container_imagem:hover{
-    background-image: url("image-equilibrium.jpg");
-    background-color: aqua;
-    background-size: cover;    
+.principal_container_imagem:hover .principal_container_imagem_imagem{
+    opacity: 0.3;  
+}
+
+.principal_container_imagem:hover .principal_container_container{
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 0.3;  
 }
